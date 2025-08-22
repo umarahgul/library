@@ -1,10 +1,12 @@
 # frozen_string_literal: true
 
 require_relative 'person'
+
+# creats a teacher object and inherits from person
 class Teacher < Person
   attr_accessor :specialization
 
-  def initialize(age, specialization, name : 'unknown')
+  def initialize(age, specialization, name: 'unknown')
     @specialization = specialization
     super(age, name)
   end
